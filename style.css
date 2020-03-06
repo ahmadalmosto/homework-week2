@@ -1,0 +1,354 @@
+    @font-face {
+        font-family: 'Lancelot';
+        src: url('Lancelot-Regular.eot');
+        src: url('Lancelot-Regular.eot?#iefix') format('embedded-opentype'),
+            url('Lancelot-Regular.woff') format('woff'),
+            url('Lancelot-Regular.ttf') format('truetype'),
+            url('Lancelot-Regular.svg#Lancelot') format('svg');
+    
+    }
+    @font-face {
+        font-family: 'OxygenMono-Regular';
+        src: url('OxygenMono-Regular.eot');
+        src: url('OxygenMono-Regular.eot?#iefix') format('embedded-opentype'),
+            url('OxygenMono-Regular.woff') format('woff'),
+            url('OxygenMono-Regular.ttf') format('truetype'),
+            url('OxygenMono-Regular.svg#OxygenMono-Regular') format('svg');
+    }
+    
+    .fontpro,.fontpro-36215 {
+        font-family: 'OxygenMono-Regular',sans-serif;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    header {
+    height: 110px;
+    position: relative;
+    background-color: teal;
+    }
+    header h1{
+        position: absolute;
+        padding-left: 37%;
+        font-size: 5em;
+        color: darkred;
+        text-transform: uppercase;
+        text-shadow: -1px 1px 1px rgb(0,0,0, .4), 1px -1px 0 rgb(255,255,255,1);    
+    }
+    section h2{
+        font-family: 'Lancelot',sans-serif;
+        text-align: center;
+        padding: 50px 20px 50px 20px;
+        background-color: rgb(125, 219, 199);
+        clear: both;
+        font-size: xx-large;
+        color: white;
+        font-weight: normal;
+        border-bottom: 10px solid teal;
+        display: inline-block;
+        font-size: 20px;
+       /* box-shadow: -1px 29px 70px -4px rgb(15, 106, 129);*/
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    }
+    #grid-floats h3{
+        text-align: right;
+        margin-left: 30px;
+        font-family: 'Concert One';
+        font-weight: normal;
+        font-size: 15px;
+            color: white;
+            background-color: rgb(15, 106, 129);
+            display: inline-block;
+        }
+    #grid-floats{
+        float: left;
+        padding-bottom: 20px;
+        border-bottom: 1px solid teal;
+    }
+    #grid-floats p{
+        background-color: whitesmoke;
+        width: 55%;
+        font-family: monospace;
+        display: inline-block;
+        height: 230px; 
+        line-height: 2.5em; 
+        text-align: justify;
+        padding: 50px;
+        padding-top: 30px; 
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    #grid-floats p:hover{
+        background-color: teal;
+        color: white;
+        transition-duration: .7s;
+        box-shadow: -1px 29px 70px -4px rgba(0,0,0,0.75);
+    }
+    #grid-floats p::first-letter{
+        content: none;
+        font-size: 3em;
+        color: darkred;
+    }
+    #grid-floats img{
+        float: right;
+        width: 35%;
+        height: 230px;
+        margin-right: 10px; 
+    }
+    #grid-floats img:hover{
+     -webkit-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.1);
+     transition-duration: 1s;
+    }
+   
+    #grid-floats li{
+        display: inline-block;
+        padding-top: 15px;
+        padding-bottom: 15px;  
+    }
+    #grid-flex{
+    justify-content: center;
+    }
+    ul#grid-flex{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    #grid-flex img{
+        height: 300px;
+        width: 300px;
+        padding-left: 30px; 
+        padding-right: 30px;
+     
+    }
+    #grid-flex img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+     transform: scale(1.1);
+    transition-duration: 1.5s;
+    }
+    #grid-flex p{
+    background-color: whitesmoke;
+    border-left: 1px solid teal;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    line-height: 2rem; 
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    box-shadow: 0px 15px 36px 7px rgba(37, 8, 8, 0.75);
+    }
+    #grid-flex p:hover{
+        background: rgb(27, 243, 243);
+        color: white;  
+    }
+    #grid-flex li{
+        list-style-type: none;
+    }
+    #grid-flex h3{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    color: rgb(15, 106, 129);
+    text-align: center;
+    font-family: 'Concert One';
+    font-weight: normal;
+    }
+
+        @media only screen and (max-width: 600px) {
+header{
+height: 70px;
+ }
+header h1{
+font-size: 3em;
+}
+ section h2{
+    padding: 30px 0px 30px 0px;
+}
+        #grid-floats p {
+        overflow-y: scroll; 
+        width: 70%;
+        height: 200px;
+                
+            }
+        #grid-floats img{        
+        width: 45%;
+        height: 100%; 
+        }
+
+        #grid-floats h3{
+        display: inline-block;
+        float: none;
+        margin: 40px;
+        margin-left: 35%;
+      
+    }
+    #grid-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #grid-flex p{
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+     margin-bottom: 30px;
+     overflow-y: scroll;
+    }
+    #grid-flex img{
+        width: 100%;
+        height: 200px;
+    }
+    #grid-flex h3{
+        background-color: rgb(0, 0, 0);
+        opacity: .5;
+        padding: 5px 0 5px 0;
+        color: white;
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.7);
+    }
+
+        }
+        @media only screen and (min-width: 601px){
+
+    #grid-floats{
+    float: left;
+    }
+    #grid-floats .grid-item:nth-child(1){
+    width: 50%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 20px 30px;
+    }
+    #grid-floats .grid-item:nth-child(2){
+        padding: 0px 15px 0px 0px;
+    float: right;
+    margin-bottom: 20px;
+    
+    }
+    #grid-floats .grid-item:nth-child(n+2){    
+    width:  27%;
+    padding-left: 20px;
+    }
+    #grid-floats p{
+    
+     overflow-y: scroll;
+    padding: 1px;
+    background-color: whitesmoke; 
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px 50px 0px;
+    display: block;
+    }
+    #grid-floats img{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    height: 300px;
+    }
+    #grid-floats img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+     transform: scale(0.8);
+     transition-duration: 1s;
+    }
+    #grid-floats h3{
+        margin: 0px 0px 0px 0px;
+    }
+    #grid-flex{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    #grid-flex li:nth-child(1){
+    flex: 40%; 
+    }
+    #grid-flex li:nth-child(2){
+        flex: 40%;
+        
+    }
+    #grid-flex .grid-item:nth-child(n+2){    
+        flex: 32%;
+        padding-bottom: 5%;  
+        margin-bottom: 2%;  
+        }
+        #grid-flex p{
+            width: 100%; 
+            margin-bottom: 30px;
+            overflow-y: scroll;
+        }
+        #grid-flex img{
+            width: 100%;
+            padding-left: 30px; 
+            padding-right: 30px;
+        }
+        }
+        @media only screen and (min-width: 1025px){
+
+            #grid-floats{
+                float: left;
+                }
+                #grid-floats .grid-item:nth-child(1){
+                width: 50%;
+                margin: 0px 0px 2% 0px;
+                }
+                #grid-floats .grid-item:nth-child(2){
+                width: 50%;
+                margin: 0px 0px 2% 0px;
+            
+                }
+        #grid-floats .grid-item:nth-child(n+3){    
+                width: 23%;
+                padding: 20px; 
+            }
+            #grid-floats p{
+            width: 100%;
+            height: 300px;
+             overflow-y: scroll;
+            text-align: center;
+            }
+            #grid-floats img{
+                height: 100%;
+                width: 100%;
+                margin: 0px 0px 0px 0px;  
+            }
+            #grid-float h3{
+                margin-top: 10px;
+            }
+
+             #grid-flex{
+             display: flex;
+             flex-wrap: wrap;  
+            }
+            #grid-flex .grid-item:nth-child(1){
+            flex : 50%;  
+             }
+            #grid-flex .grid-item:nth-child(2){
+             flex: 50%;
+            }
+            #grid-flex .grid-item:nth-child(n+3){    
+             flex: 23%;
+            padding-bottom: 5%;  
+            margin-bottom: 2%;
+                        
+          }
+            #grid-flex p{
+            width: 100%;
+             margin-bottom: 30px;
+             }
+            #grid-flex img{
+            width: 100%;
+                        
+         }
+        }
+    
+
+        
